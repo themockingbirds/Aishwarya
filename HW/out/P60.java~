@@ -1,0 +1,14 @@
+import java.io.*; 
+
+class P60{ 
+    public static void main(String [] args) throws IOException{ 
+    	InputStreamReader obj1 = new InputStreamReader(System.in); 
+    	BufferedReader obj = new BufferedReader(obj1); 
+    	String name;
+    	int age;
+    	char gender;
+    	boolean isMarried;
+    	System.out.print("Enter your name:  "); 
+		name=String.parseInt(obj.readLine());
+    	System.out.print("Enter your age:  "); 
+		age=Integer.parseInt(obj.readLine());

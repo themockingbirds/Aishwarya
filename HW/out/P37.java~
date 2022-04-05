@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class P37{
+	public static void main(String arg[]){
+		char ch;
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter a character : ");
+		ch=s.next().charAt(0);
+		System.out.print(ch+": ");
+		System.out.println((ch=='a'&&ch=='e'&&ch=='i'&&ch=='o'&&ch=='u')?"vowel":"consonant");
+	}
+}

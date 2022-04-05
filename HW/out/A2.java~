@@ -1,0 +1,164 @@
+import java.io.*; 
+
+class Project1{ 
+    public static void main(String [] args) throws IOException{ 
+    	InputStreamReader obj1 = new InputStreamReader(System.in); 
+    	BufferedReader obj = new BufferedReader(obj1); 
+    	String name,flag="hello",flagC="hi";
+    	int count=1,ch,chC,score1=0,scoreR=0,score2=0,scoreP=0,score3=0,scoreS=0,f=1;
+    	int round1=0,roundR=0,round2=0,roundP=0,round3=0,roundS=0,score=0,scoreC=0;
+    	System.out.print("Input Your User Name: ");
+    	name=obj.readLine();
+    	System.out.println("\n");
+    	System.out.println("----------------------------------------------------------------");
+    	System.out.printf("%40s\n","~Rock Paper & Scissors~");
+    	System.out.printf("%30s%s\n","Hello, ",name);
+    	while(count<=3){
+			System.out.println("----------------------------------------------------------------");
+			System.out.printf("%s%d\n","Round -> ",count);
+			System.out.println("----------------------------------------------------------------");
+			System.out.println("Choose your armor ->");
+			System.out.println("\n");
+			System.out.printf("%10s\n","	0.-> Rock   1.-> Paper   2.-> Scissors");
+			System.out.println("\n");
+			System.out.print(name+" :   -> ");
+			ch=Integer.parseInt(obj.readLine());
+			
+				switch(ch){
+					case 0:
+					flag="Rock";
+					System.out.print("Computer:  -> ");
+					chC=Integer.parseInt(obj.readLine());
+					if(chC==0){
+						flagC="Rock";
+					}
+					if(chC==1){
+						flagC="Paper";
+					}
+					if(chC==2){
+						flagC="Scissors";
+					}
+					System.out.println(name+" : "+ch+" -> "+flag);
+					System.out.println("Computer : "+chC+" -> "+flagC);
+					if(ch==0&&chC==2){
+						score++;
+						score1++;
+					}
+					if(chC==1&&ch==0){
+						scoreR++;
+						scoreC++;
+					}
+					if(ch==chC){
+						System.out.println("Oops, It's a tie");
+					}	
+					round1=score1;
+					roundR=scoreR;
+					System.out.println("Round "+count+" Scores:");
+					System.out.println("	"+name+" : "+score+"	Computer : "+scoreC);
+					count++;
+					break;
+					
+					case 1:
+					flag="Paper";
+					System.out.print("Computer:  -> ");
+					chC=Integer.parseInt(obj.readLine());
+					if(chC==0){
+						flagC="Rock";
+					}
+					if(chC==1){
+						flagC="Paper";
+					}
+					if(chC==2){
+						flagC="Scissors";
+					}
+					System.out.println(name+" : "+ch+" -> "+flag);
+					System.out.println("computer : "+chC+" -> "+flagC);
+					if(ch==1&&chC==0){
+						score2++;
+						score++;
+					}
+					if(chC==2&&ch==1){
+						scoreP++;
+						scoreC++;
+					}
+					if(ch==chC){
+						System.out.println("Oops, It's a tie");
+					}	
+					round2=score2;
+					roundP=scoreP;
+					System.out.println("Round "+count+" Scores:");
+					System.out.println("	"+name+" : "+score+"	Computer : "+scoreC);
+					count++;
+					break;
+					
+					case 2:
+					flag="Scissors";
+					System.out.print("Computer:  -> ");
+					chC=Integer.parseInt(obj.readLine());
+					if(chC==0){
+						flagC="Rock";
+					}
+					if(chC==1){
+						flagC="Paper";
+					}
+					if(chC==2){
+						flagC="Scissors";
+					}
+					System.out.println(name+" : "+ch+" -> "+flag);
+					System.out.println("Computer : "+chC+" -> "+flagC);
+					if(ch==2&&chC==1){
+						score3++;
+						score++;
+					}
+					if(chC==0&&ch==2){
+						scoreC++;
+						scoreS++;
+					}
+					if(ch==chC){
+						System.out.println("Oops, It's a tie");
+						score3=0;
+						scoreS=0;
+					}	
+					round3=score3;
+					roundS=scoreS;
+					System.out.println("Round "+count+" Scores:");
+					System.out.println("	"+name+" : "+score+"	Computer : "+scoreC);
+					count++;
+					break;
+					
+					default: 
+					System.out.println("!!Please Input 0 For Rock, 1 For Paper & 2 For Scissors!!");
+					System.out.print(name+" :   -> ");
+					ch=Integer.parseInt(obj.readLine());
+					
+				 }
+		}
+		
+			System.out.println("----------------------------------------------------------------");
+			System.out.printf("%40s\n","Score Board");
+			System.out.print("\n");
+			System.out.println("Round 1 Score ->");
+			System.out.println(name+" : "+round1+"  Computer : "+roundR);
+			System.out.println("\n");
+			System.out.println("Round 2 Score ->");
+			System.out.println(name+" : "+round2+"  Computer : "+roundP);
+			System.out.println("\n");
+			System.out.println("Round 3 Score ->");
+			System.out.println(name+" : "+round3+"  Computer : "+roundS);
+			System.out.println("\n");
+			System.out.println("----------------------------------------------------------------");
+			if(score==scoreC){
+				System.out.println("		  !! You Both Are Very Tough !!");
+			}
+			if(score>scoreC){
+				System.out.println("			Congrats !! ~"+name+" WON~ !!");
+			}
+			if(score<scoreC){
+				System.out.println("			Congrats !! ~Computer WON~ !!");
+			}
+	}
+}
+    	
+    	
+    	
+    	

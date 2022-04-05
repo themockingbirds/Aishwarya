@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class P52{
+	public static void main(String arg[]){
+		int ch;
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter:  ");
+		ch=s.nextInt();
+		if(ch>=65&&ch<=90){
+			System.out.println("You entered a character");
+		}
+		if(ch>=0&&ch<=9){
+			System.out.println("You entered a number");
+		}
+		else{
+			System.out.println("Special character");
+		}
+	}
+}
