@@ -1,0 +1,27 @@
+//revision set Q4
+
+import java.util.Scanner;
+class Q4{
+	public static void main(String arg[]){
+		int age,ch;
+		Scanner s=new Scanner(System.in);
+		System.out.printf("Enter your age: ");
+		age=s.nextInt();
+		if(age>=18){
+			System.out.println("Excellent You are eligible for vote");
+			System.out.print("Do you have a voter id: 1:yes  2:no");
+			ch=s.nextInt();
+			switch(ch){
+				case 1:
+				System.out.println("Go and vote");
+				break;
+				case 2:
+				System.out.println("Apply for voter id");
+				break;
+			}
+		}
+		else{
+			System.out.println("Good Luck,Next Time");
+		}
+	}
+}

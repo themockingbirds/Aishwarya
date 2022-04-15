@@ -1,0 +1,29 @@
+//Revision set Q3
+
+import java.util.Scanner;
+class Q3{
+	public static void main(String arg[]){
+		String ch;
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter:  ");
+		ch=s.nextLine();
+		if(ch>=65&&ch<=90){
+			System.out.println("Uppercase");
+		}
+		else if(ch>=97&&ch<=122){
+			System.out.println("Lowercase");
+		}
+		else if(ch>=0&&ch<=9){
+			System.out.println("You entered a number");
+		}
+		else{
+			System.out.println("Special character");
+		}
+	}
+}
+
+
+
+
+			
+ 
