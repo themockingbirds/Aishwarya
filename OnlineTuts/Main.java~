@@ -1,4 +1,6 @@
-class Main {
+package com.oc;
+
+public class Main {
     public static void main(String[] args) {
         Def def = new Def();
         def.display();
@@ -17,7 +19,6 @@ class Def extends Abc{
     Def(){
         System.out.println("Hello, I am Def Cons");
     }
-    @Override
     void display(){
        // super();
         System.out.println("I am DEF");
