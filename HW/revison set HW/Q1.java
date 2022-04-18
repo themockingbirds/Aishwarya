@@ -32,7 +32,7 @@ class Q1{
 			System.out.print("Input Temp(in Degree): ");
 			toFahrenheit=s.nextFloat();
 			//value=(toFahrenheit)*(5/9)-32;
-			value=(toFahrenheit*9/5)+32;
+			value=+(toFahrenheit*9/5)32;
 			System.out.println(toFahrenheit+"degree= "+value+" F");
 			break;
 			case 2:

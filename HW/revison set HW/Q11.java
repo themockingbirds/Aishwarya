@@ -1,47 +1,117 @@
 //revision set Q11
+/*
+
+		name of patient
+		sex
+		age
+		ward number
+		bed number
+		nature of illness
+date of admission
+*/
 
 import java.util.Scanner; 
-class Q11{ 
-    public static void main(String args[]){ 
-    	Scanner s=new Scanner(System.in);
-    	String name,illness,doa;
-    	char gender,ward;
-    	int size,age,bed;
-    	System.out.print("Size of array: ");
-    	size=s.nextInt();
-    	int arr[]=new int[size];
-    	for(int i=0;i<size;i++){
-			System.out.print("Name: ");
-			name[i]=s.nextLine();
-			s.nextLine();
-			System.out.print("Age: ");
-			age[i]=s.nextInt();
-			s.nextLine();
-			System.out.print("Gender: ");
-			gender[i]=s.next().charAt(0);
-			System.out.print("Ward: ");
-			ward[i]=s.next().charAt(0);
-			System.out.print("Bed: ");
-			bed[i]=s.nextInt();
-			s.nextLine();
-			System.out.print("Illness: ");
-			illness[i]=s.nextLine();
-			System.out.print("Admission date: ");
-			doa[i]=s.nextLine();
-		}
-		System.out.println("---------------------------------------------------");
-		for(int i=0;i<size;i++){
-			System.out.println("Name of the patient : "+name);
-			System.out.println("Age f the patient : "+age);
-			System.out.print("Gender : "+gender);
-			System.out.print("Ward number : "+ward);
-			System.out.print("Bed number : "+bed);
-			System.out.print("Nature of Illness : "+illness);
-			System.out.print("Date of admission : "+doa);
-		}
-			
-			
-		
+class Q11{
+	String  sex, name, ill;
+	int age, wardNo,bedNo;
+	
+  public static void main(String args[]){
+    int max =100,i=0;
+    Scanner sc = new Scanner(System.in);
+    Q11 obj[] = new Q11[max];
+    	
+    System.out.print("Entered No of Record You Want to Input: ");
+    int size=sc.nextInt();
+    sc.nextLine();
+    for(i=0;i<size;i++){
+    	obj[i]=new Q11();
+    
+    	System.out.print("Name Of Patient : ");
+    	obj[i].name=sc.nextLine();
+    	
+    	System.out.print("Age :");
+    	obj[i].age=sc.nextInt();
+    	sc.nextLine();
+    	
+    	System.out.print("Sex : ");
+    	obj[i].sex=sc.nextLine();
+    	
+    	System.out.print("Nature Of Illness : ");
+    	obj[i].ill=sc.nextLine();
+    	
+    	System.out.print("Ward No :");
+    	obj[i].wardNo=sc.nextInt();
+    	
+    	System.out.print("Bed No :");
+    	obj[i].bedNo=sc.nextInt();
+    	sc.nextLine();
+    }
+    
+    for(i=0;i<size;i++){
+    	
+    	System.out.println("Name Of Patient : "+obj[i].name);
+    	System.out.println("Age :"+obj[i].age);
+    	System.out.print("Sex : "+obj[i].sex);
+    	System.out.println("Nature Of Illness : "+obj[i].ill);
+    	System.out.println("Ward No :"+obj[i].wardNo);
+    	System.out.println("Bed No :"+obj[i].bedNo);
+    }
+    
+    
+    //insert new record
+    char ch;
+    
+    i=size;
+    do{  
+    	obj[i]=new Q11();
+    	System.out.print("Name Of Patient : ");
+    	obj[i].name=sc.nextLine();
+    	
+    	System.out.print("Age :");
+    	obj[i].age=sc.nextInt();
+    	sc.nextLine();
+    	
+    	System.out.print("Sex : ");
+    	obj[i].sex=sc.nextLine();
+    	
+    	System.out.print("Nature Of Illness : ");
+    	obj[i].ill=sc.nextLine();
+    	
+    	System.out.print("Ward No :");
+    	obj[i].wardNo=sc.nextInt();
+    	
+    	System.out.print("Bed No :");
+    	obj[i].bedNo=sc.nextInt();
+    	
+    	sc.nextLine();
+    	
+    	System.out.print("Do you want to input another record: ");
+    	ch=sc.next().charAt(0);
+    	i++;
+    	size=i;
+    	if(ch=='n'||ch=='N'){
+    		break;
+    	}
+    	
+     }while(ch=='y'||ch=='Y');
+
+     //display
+     for(i=0;i<size;i++){
+    	
+    	System.out.println("Name Of Patient : "+obj[i].name);
+    	System.out.println("Age :"+obj[i].age);
+    	System.out.print("Sex : "+obj[i].sex);
+    	System.out.println("Nature Of Illness : "+obj[i].ill);
+    	System.out.println("Ward No :"+obj[i].wardNo);
+    	System.out.println("Bed No :"+obj[i].bedNo);
+    }
+    
+    //edit...
+    System.out.println("Input Ward No: ");
+    int num = sc.nextInt();
+    
+    
+    
 	}
 }
     	

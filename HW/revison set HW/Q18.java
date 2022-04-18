@@ -15,7 +15,7 @@ class Q18{
 	}
 	
 	void def(){
+		int i=0;
 		System.out.println("Non Static");
 	}
 }
-		

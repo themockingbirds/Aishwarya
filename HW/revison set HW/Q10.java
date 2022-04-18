@@ -15,7 +15,7 @@ class Q10{
     	size=s.nextInt();
     	System.out.print("Input "+size+" elements: ");
     	int arr[]=new int[size];
-    	/*for(int i=0;i<size;i++){
+    	for(int i=0;i<size;i++){
     		for(int j=i+1;j<size;j++){
 				arr[i]=s.nextInt();
 					if(arr[i]==arr[j]){
@@ -25,7 +25,10 @@ class Q10{
 						System.out.print(" ");
 					}
 				}
-			}*/
+			}
+			
+			
+			/*
 			for(int i=0;i<size;i++){
 				arr[i]=s.nextInt();
     		for(int j=0;j<size;j++){
@@ -36,7 +39,7 @@ class Q10{
 						System.out.print(" ");
 					}
 				}
-			}
+			}*/
    }
 }
     	

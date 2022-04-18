@@ -16,16 +16,6 @@ class Q13{
 }*/
 
 
-/*
-	12. WAP to read the following information from the keyboard in which 
-	the base class consists of: employee name, code and designation. 
-	The derived class contains the data members, viz. years of experience and age. 
-	Now  perform the following information:
-		a. Display all records of employee.
-		b. search and find the record using employee code.
-
-*/
-
    
 import java.util.Scanner; 
 class Q13{
