@@ -7,14 +7,18 @@ abstract class Abs{
 }
 
 abstract class Def extends Abs{
-	//void  greet(){
+	/*
+	void  greet(){
 		
-		//
-	//}
+	
+	}
+	*/
+	
 	void sayGa(){
 		System.out.println("Good afternoon");
 	}
 }
+
 class Abs_Keyword extends Def{
 	void greet(){
 		System.out.println("You're welcome");
@@ -23,6 +27,6 @@ class Abs_Keyword extends Def{
 			Main obj = new Main();
 			obj.greet();
 			obj.sayGm();
-			obj.sayGa();
+			obj.SayGa();
 	}
 }

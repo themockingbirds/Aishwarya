@@ -1,4 +1,4 @@
-class Main {
+class OverrideAnno {
     public static void main(String[] args) {
         Def def = new Def();
         def.display();
@@ -17,6 +17,7 @@ class Def extends Abc{
     Def(){
         System.out.println("Hello, I am Def Cons");
     }
+    
     @Override
     void display(){
        // super();

@@ -39,7 +39,7 @@ class Q1{
 			System.out.print("Input Temp(in Fahrenheit): ");
 			toDegree=s.nextFloat();
 			//value1=(toDegree)*(9/5)+32;
-			value1=(toDegree-32)*5/9;
+			value1=(toDegree-32)*5/9;w
 			System.out.println(toDegree+"fahrenheit= "+value1+" deg.");
 			break;
 			default:

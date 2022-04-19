@@ -22,9 +22,9 @@ void displayB(){
 }
 
 
-class EfgMain{
+class AccModifier{
 	public static void main(String arg[]){
-		Efg obj = new Efg();
+		AccModifier obj = new AccModifier();
 		obj.a=10;
 		obj.b=10;
 		obj.c=11;
