@@ -22,6 +22,7 @@ class InfMain2 implements Demo{
 		System.out.println("a: "+a);
 	//	a++; //generate an error
 	//b++; //generate an error
+	
 	System.out.println("b: "+b);
 		System.out.println("Welcome to my program");
 	} 
