@@ -1,6 +1,6 @@
 class SpecificError{
 	public static void main(String arg[]){
-		int a=10, b=5 , c=5,x,y;
+		int a=10, b=5 , c=5,x,y;  
 
 		//x=a/(b-c);
 		//System.out.println("x: "+x);
@@ -13,7 +13,7 @@ class SpecificError{
 			
 		}*/
 		catch(Exception e){
-			System.out.println(e + " \n- Error Ouccred : Division By 0");
+			System.out.println(e + " \n	- Error Ouccred : Division By 0");
 			
 		}
 		
