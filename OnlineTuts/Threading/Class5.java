@@ -1,4 +1,4 @@
-//case 2 with threading
+//case 2 :with threading
 class Class5 {
     public static void main(String[] args) {
         Class5 cs5 = new Class5();
